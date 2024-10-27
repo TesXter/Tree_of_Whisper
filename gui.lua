@@ -1,5 +1,6 @@
 local gui = {}
 local developer_id = "TesXter"
+local version = "1.0"
 
 local function create_checkbox(key)
     return checkbox:new(false, get_hash(developer_id .. "_" .. key))
@@ -13,7 +14,7 @@ gui.elements = {
 }
 
 function gui.render()
-    if not gui.elements.main_tree:push("Tree of Whispers 0.1") then return end
+    if not gui.elements.main_tree:push("Tree of Whispers | " .. developer_id .. " | V" .. version) then return end
 
     gui.elements.main_toggle:render("Enable", "Enable Hotkeys")
     if not gui.elements.main_toggle:get() then
