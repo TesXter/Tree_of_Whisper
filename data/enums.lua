@@ -1,0 +1,9 @@
+local enums = {
+    WAYPOINT_TREE_OF_WHISPERS = 0x90557,
+    TREE_OF_WHISPERS_LOCATION = vec3:new(-1330.0712890625, 780.5947265625, 1.4736328125),
+    INTERACTION_DISTANCE = 2,
+    ZONE_TREE_OF_WHISPERS = "Hawe_Bog",
+    QUEST_NAME = "Bounty_Meta_Quest",
+}
+
+return enums

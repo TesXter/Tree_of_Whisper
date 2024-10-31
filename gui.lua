@@ -16,7 +16,7 @@ gui.elements = {
 function gui.render()
     if not gui.elements.main_tree:push("Tree of Whispers | " .. developer_id .. " | V" .. version) then return end
 
-    gui.elements.main_toggle:render("Enable", "Enable Hotkeys")
+    gui.elements.main_toggle:render("Enable", "")
     if not gui.elements.main_toggle:get() then
         gui.elements.main_tree:pop()
         return
